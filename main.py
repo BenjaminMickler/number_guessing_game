@@ -154,5 +154,7 @@ if __name__ == "__main__":
             gui_if()
         elif sys.argv[1].lower() in ["-c", "--cli", "cli"]:
             cli_if().start()
+        else:
+            print("Invalid arguments, use --help for help")
     else:
         print("Not enough arguments, use --help for help")
